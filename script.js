@@ -43,6 +43,7 @@ buttonStart.addEventListener('click', () => {
             breakDisplay.innerText = `${Math.trunc(timeOut/60)} : ${(timeOut % 60 < 10) ? `0${timeOut % 60}` : timeOut % 60}`;
         } 
     }, 1000)
+    
     // Reset
     buttonReset.addEventListener('click', () => {
         clearInterval(timer);
