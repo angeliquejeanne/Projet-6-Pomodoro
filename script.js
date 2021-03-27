@@ -56,3 +56,14 @@ buttonStart.addEventListener('click', () => {
         return;
     }
 })
+
+buttonPause.addEventListener('click', () => {
+
+    if(pause === false){
+        buttonPause.innerText = "Play";
+    } else if(pause === true){
+        buttonPause.innerText = "Pause";
+    }
+    pause = !pause;
+    
+})
